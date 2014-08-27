@@ -27,20 +27,20 @@ angular.module( 'ngBoilerplate.map', [
     url: '/map',
     views: {
       "main": {
-        controller: 'ListCtrl',
+        controller: 'MapCtrl',
         templateUrl: 'map/map.tpl.html'
       }
     },
-    data:{ pageTitle: 'List' }
+    data:{ pageTitle: 'My Places' }
   });
 })
 
 /**
  * And of course we define a controller for our route.
  */
-.controller( 'ListCtrl', function ListController( $scope ) {
+.controller( 'MapCtrl', function MapController( $scope ) {
 
-    alert("You're in the ListController.");
+    alert("You're in the MapController.");
 })
 
 ;
