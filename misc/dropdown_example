@@ -1,0 +1,38 @@
+In HTML:
+
+
+ <p>
+    What's better than Bootstrap styles? Bootstrap directives!  The
+fantastic <a href="http://angular-ui.github.com/bootstrap">UI
+Bootstrap</a>
+    library contains a set of native AngularJS directives that are
+endlessly
+    extensible. You get the tabs, the tooltips, the accordions. You get
+your
+    carousel, your modals, your pagination. And <i>more</i>.
+    How about a quick demo?
+  </p>
+
+  <ul>
+    <li class="dropdown">
+      <a class="btn dropdown-toggle">
+        Click me!
+      </a>
+      <ul class="dropdown-menu">
+        <li ng-repeat="choice in dropdownDemoItems">
+          <a>{{choice}}</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+In controller:
+.controller( 'AboutCtrl', function AboutCtrl( $scope ) {
+  // This is simple a demo for UI Boostrap.
+  $scope.dropdownDemoItems = [
+    "The first choice!",
+    "And another choice for you.",
+    "but wait! A third!"
+  ];
+})
+
