@@ -47,6 +47,7 @@ angular.module( 'ngBoilerplate.list', [
             id:   'Home',
             GoogleName: '60 East Cliff Street, Somerville, NJ 08876 USA',
             latlon: '40.570487,-74.60814',
+            tags: [ 'Abode' ],
             deleteMe: false
         },
         {
@@ -54,6 +55,15 @@ angular.module( 'ngBoilerplate.list', [
             id:   'Work',
             GoogleName: '60 East Cliff Street, Somerville, NJ 08876 USA',
             latlon: '40.570487,-74.60814',
+            tags: [ 'Abode' ],
+            deleteMe: false
+        },
+        {
+            name: 'Wasabi',
+            id:   'Wasabi',
+            GoogleName: 'Wasabi Asian Plates & Sushi 12 W Main St Somerville, NJ 0887660 East Cliff Street, Somerville, NJ 08876 USA',
+            latlon: '40.568392,-74.61217',
+            tags: [ 'Restaurant', 'Sushi' ],
             deleteMe: false
         },
         {
@@ -61,11 +71,22 @@ angular.module( 'ngBoilerplate.list', [
             id:   'GfS',
             GoogleName: 'Grounds For Sculpture 18 Fairgrounds Rd Trenton, NJ 08619',
             latlon: '40.2356839,-74.7176335',
+            tags: [ 'Art', 'Park' ],
             deleteMe: false
         }
     ];
 
-    
+   $scope.edit = function(place) {
+    alert("you're editing " + place.name); 
+  }; 
+
+   $scope.deletePlaces = function(place) {
+    alert("you're deleting "); 
+  }; 
+
+   $scope.addPlace= function(place) {
+    alert("you're adding a place"); 
+  }; 
 })
 
 ;

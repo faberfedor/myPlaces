@@ -1,12 +1,20 @@
-<div>
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <p>
   <span>Here is the list of places.</span>
+  </p>
 
 <table>
     <thead>
       <tr>
-        <th>Delete</th>
+        <th><i class="fa fa-minus-circle"
+                ng-class="{'true':'icon-check','false':'icon-check-empty'}[place.editMe]" 
+                ng-click="deletePlaces()"></i>
+        </th>
         <th>My Places</th>
-        <th></th>
+        <th><i class="fa fa-plus-circle"
+                ng-class="{'true':'icon-check','false':'icon-check-empty'}[place.editMe]" 
+                ng-click="addPlace()"></i>
+        </th>
       </tr>
     </thead>
     <tbody>
@@ -20,10 +28,10 @@
         </td>
         <td>{{ place.name }}</td>
         <td>
-          <div class="button">
-            <label>
-              <input type="button" name="edit" ng-model="place.name">
-            </label>
+          <div>
+             <i class="fa fa-edit" 
+                ng-class="{'true':'icon-check','false':'icon-check-empty'}[place.editMe]" 
+                ng-click="edit(place)"></i>
           </div>
         </td>
       </tr>
