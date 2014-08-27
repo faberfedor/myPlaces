@@ -40,7 +40,32 @@ angular.module( 'ngBoilerplate.list', [
  */
 .controller( 'ListCtrl', function ListController( $scope ) {
 
-    alert("You're in the ListController.");
+
+    $scope.places = [
+        {
+            name: 'Home',
+            id:   'Home',
+            GoogleName: '60 East Cliff Street, Somerville, NJ 08876 USA',
+            latlon: '40.570487,-74.60814',
+            deleteMe: false
+        },
+        {
+            name: 'Work',
+            id:   'Work',
+            GoogleName: '60 East Cliff Street, Somerville, NJ 08876 USA',
+            latlon: '40.570487,-74.60814',
+            deleteMe: false
+        },
+        {
+            name: 'Grounds For Sculpture',
+            id:   'GfS',
+            GoogleName: 'Grounds For Sculpture 18 Fairgrounds Rd Trenton, NJ 08619',
+            latlon: '40.2356839,-74.7176335',
+            deleteMe: false
+        }
+    ];
+
+    
 })
 
 ;

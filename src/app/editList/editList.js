@@ -27,7 +27,7 @@ angular.module( 'ngBoilerplate.editList', [
     url: '/editList',
     views: {
       "main": {
-        controller: 'ListCtrl',
+        controller: 'editListCtrl',
         templateUrl: 'editList/editList.tpl.html'
       }
     },
@@ -38,9 +38,9 @@ angular.module( 'ngBoilerplate.editList', [
 /**
  * And of course we define a controller for our route.
  */
-.controller( 'ListCtrl', function ListController( $scope ) {
+.controller( 'editListCtrl', function editListController( $scope ) {
 
-    alert("You're in the ListController.");
+    alert("You're in the editListController.");
 })
 
 ;
