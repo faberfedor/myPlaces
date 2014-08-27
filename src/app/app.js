@@ -3,6 +3,9 @@ angular.module( 'ngBoilerplate', [
   'templates-common',
   'ngBoilerplate.home',
   'ngBoilerplate.about',
+  'ngBoilerplate.list',
+  'ngBoilerplate.editList',
+  'ngBoilerplate.map',
   'ui.router'
 ])
 
