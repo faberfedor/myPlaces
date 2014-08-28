@@ -1,0 +1,5 @@
+To add a JS file{
+  bower install _url_
+  add entry to files: in bower.config.js
+
+

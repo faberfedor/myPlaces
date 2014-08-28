@@ -14,7 +14,8 @@
  */
 angular.module( 'ngBoilerplate.list', [
   'ui.router',
-  'plusOne'
+  'plusOne',
+  'ngResource'
 ])
 
 /**
@@ -38,9 +39,9 @@ angular.module( 'ngBoilerplate.list', [
 /**
  * And of course we define a controller for our route.
  */
-.controller( 'ListCtrl', function ListController( $scope ) {
+.controller( 'ListCtrl', function ListController( $scope, PlaceRes ) {
 
-
+    /*
     $scope.places = [
         {
             name: 'Home',
@@ -74,7 +75,9 @@ angular.module( 'ngBoilerplate.list', [
             tags: [ 'Art', 'Park' ],
             deleteMe: false
         }
-    ];
+    ];*/
+
+   $scope.places = PlaceRes.query();
 
    $scope.edit = function(place) {
     alert("you're editing " + place.name); 
@@ -87,6 +90,13 @@ angular.module( 'ngBoilerplate.list', [
    $scope.addPlace= function(place) {
     alert("you're adding a place"); 
   }; 
+})
+
+/**
+ * Add a resource to allow us to get at the server
+ */
+.factory( 'PlaceRes', function ( $resource )  {
+  return $resource('./places.json');
 })
 
 ;

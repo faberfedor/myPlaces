@@ -6,7 +6,8 @@ angular.module( 'ngBoilerplate', [
   'ngBoilerplate.list',
   'ngBoilerplate.editList',
   'ngBoilerplate.map',
-  'ui.router'
+  'ui.router',
+  'ngResource'
 ])
 
 .config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {
