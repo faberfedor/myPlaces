@@ -5,7 +5,7 @@
  * automatically.
  */
 describe( 'list section', function() {
-  beforeEach( module( 'ngBoilerplate.list' ) );
+  beforeEach( module( 'placesList.list' ) );
 
   it( 'should have a dummy test', inject( function() {
     expect( true ).toBeTruthy();
@@ -19,7 +19,7 @@ describe( 'list controller', function() {
   var scope, httpBackend;
 
   //mock Application to allow us to inject our own dependencies
-  beforeEach(angular.mock.module('ngBoilerplate'));
+  beforeEach(angular.mock.module('placesList'));
 
   //mock the controller for the same reason and include $rootScope and $controller
   beforeEach(angular.mock.inject(function($rootScope, $controller, _$httpBackend_ ){
@@ -27,7 +27,7 @@ describe( 'list controller', function() {
     scope = $rootScope.$new();
 
     scope.httpBackend = _$httpBackend_;
-    scope.httpBackend.expect('GET', './places.json').respond(
+    scope.httpBackend.expect('GET', '../../assets/places.json').respond(
       [
         {
             name: 'Home',

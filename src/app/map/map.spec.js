@@ -5,7 +5,7 @@
  * automatically.
  */
 describe( 'map section', function() {
-  beforeEach( module( 'ngBoilerplate.map' ) );
+  beforeEach( module( 'placesList.map' ) );
 
   it( 'should have a dummy test', inject( function() {
     expect( true ).toBeTruthy();

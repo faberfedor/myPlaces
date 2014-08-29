@@ -1,11 +1,11 @@
-angular.module( 'ngBoilerplate', [
+angular.module( 'placesList', [
   'templates-app',
   'templates-common',
-  'ngBoilerplate.home',
-  'ngBoilerplate.about',
-  'ngBoilerplate.list',
-  'ngBoilerplate.editList',
-  'ngBoilerplate.map',
+  'placesList.home',
+  'placesList.about',
+  'placesList.list',
+  'placesList.editList',
+  'placesList.map',
   'ui.router',
   'ngResource'
 ])

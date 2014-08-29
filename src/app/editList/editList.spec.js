@@ -5,7 +5,7 @@
  * automatically.
  */
 describe( 'editList section', function() {
-  beforeEach( module( 'ngBoilerplate.editList' ) );
+  beforeEach( module( 'placesList.editList' ) );
 
   it( 'should have a dummy test', inject( function() {
     expect( true ).toBeTruthy();

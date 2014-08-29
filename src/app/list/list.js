@@ -12,7 +12,7 @@
  * The dependencies block here is also where component dependencies should be
  * specified, as shown below.
  */
-angular.module( 'ngBoilerplate.list', [
+angular.module( 'placesList.list', [
   'ui.router',
   'plusOne',
   'ngResource'
